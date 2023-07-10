@@ -1,11 +1,11 @@
 local base_icons_path = "__base__/graphics/icons/"
 
-local which_icon = function(name)
-  return settings.startup["vlk2-" .. name].value
+local restore_vanilla_look = function(name)
+  return settings.startup["vlk2-" .. name].value == "vanilla"
 end
 
 -- Iron plate
-if which_icon("iron-plate") == "vanilla" then
+if restore_vanilla_look("iron-plate") then
   krastorio.icons.setItemIcon("iron-plate", base_icons_path .. "iron-plate.png", 64, 4)
   -- recipe
   local recipe = krastorio.recipes.getRecipeFromName("iron-plate")
@@ -34,7 +34,7 @@ if which_icon("iron-plate") == "vanilla" then
 end
 
 -- Copper plate
-if which_icon("copper-plate") == "vanilla" then
+if restore_vanilla_look("copper-plate") then
   krastorio.icons.setItemIcon("copper-plate", base_icons_path .. "copper-plate.png", 64, 4)
   -- recipe
   local recipe = krastorio.recipes.getRecipeFromName("copper-plate")
@@ -63,21 +63,21 @@ if which_icon("copper-plate") == "vanilla" then
 end
 
 -- Iron gear wheel
-if which_icon("iron-gear-wheel") == "vanilla" then
+if restore_vanilla_look("iron-gear-wheel") then
   krastorio.icons.setItemIcon("iron-gear-wheel", base_icons_path .. "iron-gear-wheel.png", 64, 4)
 end
 
 -- Electronic circuit
-if which_icon("electronic-circuit") == "vanilla" then
+if restore_vanilla_look("electronic-circuit") then
   krastorio.icons.setItemIcon("electronic-circuit", base_icons_path .. "electronic-circuit.png", 64, 4)
 end
 
 -- Advanced circuit
-if which_icon("advanced-circuit") == "vanilla" then
+if restore_vanilla_look("advanced-circuit") then
   krastorio.icons.setItemIcon("advanced-circuit", base_icons_path .. "advanced-circuit.png", 64, 4)
 end
 
 -- Processing unit
-if which_icon("processing-unit") == "vanilla" then
+if restore_vanilla_look("processing-unit") then
   krastorio.icons.setItemIcon("processing-unit", base_icons_path .. "processing-unit.png", 64, 4)
 end
