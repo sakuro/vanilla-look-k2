@@ -66,3 +66,18 @@ end
 if which_icon("iron-gear-wheel") == "vanilla" then
   krastorio.icons.setItemIcon("iron-gear-wheel", base_icons_path .. "iron-gear-wheel.png", 64, 4)
 end
+
+-- Electronic circuit
+if which_icon("electronic-circuit") == "vanilla" then
+  krastorio.icons.setItemIcon("electronic-circuit", base_icons_path .. "electronic-circuit.png", 64, 4)
+end
+
+-- Advanced circuit
+if which_icon("advanced-circuit") == "vanilla" then
+  krastorio.icons.setItemIcon("advanced-circuit", base_icons_path .. "advanced-circuit.png", 64, 4)
+end
+
+-- Processing unit
+if which_icon("processing-unit") == "vanilla" then
+  krastorio.icons.setItemIcon("processing-unit", base_icons_path .. "processing-unit.png", 64, 4)
+end
