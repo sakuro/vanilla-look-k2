@@ -81,3 +81,55 @@ end
 if restore_vanilla_look("processing-unit") then
   krastorio.icons.setItemIcon("processing-unit", base_icons_path .. "processing-unit.png", 64, 4)
 end
+
+-- Water
+if restore_vanilla_look("water") then
+  krastorio.icons.setItemIcon("water", base_icons_path .. "fluid/water.png", 64, 4)
+end
+
+-- Steam
+if restore_vanilla_look("steam") then
+  krastorio.icons.setItemIcon("steam", base_icons_path .. "fluid/steam.png", 64, 4)
+end
+
+-- Sulfuric acid
+if restore_vanilla_look("sulfuric-acid") then
+  krastorio.icons.setItemIcon("sulfuric-acid", base_icons_path .. "fluid/sulfuric-acid.png", 64, 4)
+end
+
+-- Crude oil
+if restore_vanilla_look("crude-oil") then
+  krastorio.icons.setItemIcon("crude-oil", base_icons_path .. "fluid/crude-oil.png", 64, 4)
+end
+
+-- Light oil
+if restore_vanilla_look("light-oil") then
+  krastorio.icons.setItemIcon("light-oil", base_icons_path .. "fluid/light-oil.png", 64, 4)
+end
+
+-- Heavy oil
+if restore_vanilla_look("heavy-oil") then
+  krastorio.icons.setItemIcon("heavy-oil", base_icons_path .. "fluid/heavy-oil.png", 64, 4)
+end
+
+-- Lubricant
+if restore_vanilla_look("lubricant") then
+  krastorio.icons.setItemIcon("lubricant", base_icons_path .. "fluid/lubricant.png", 64, 4)
+end
+
+-- Petroleum gas
+if restore_vanilla_look("petroleum-gas") then
+  krastorio.icons.setItemIcon("petroleum-gas", base_icons_path .. "fluid/petroleum-gas.png", 64, 4)
+end
+
+if restore_vanilla_look("light-oil") and restore_vanilla_look("petroleum-gas") then
+  krastorio.icons.setRecipeIcon("light-oil-cracking", base_icons_path .. "fluid/light-oil-cracking.png", 64, 4)
+end
+
+if restore_vanilla_look("heavy-oil") and restore_vanilla_look("light-oil") then
+  krastorio.icons.setRecipeIcon("heavy-oil-cracking", base_icons_path .. "fluid/heavy-oil-cracking.png", 64, 4)
+end
+
+if restore_vanilla_look("heavy-oil") then
+  krastorio.icons.setRecipeIcon("coal-liquefaction", base_icons_path .. "fluid/coal-liquefaction.png", 64, 4)
+end
