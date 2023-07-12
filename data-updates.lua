@@ -141,3 +141,12 @@ end
 if restore_vanilla_look("heavy-oil") then
   krastorio.icons.setRecipeIcon("coal-liquefaction", base_icons_path .. "fluid/coal-liquefaction.png", 64, 4)
 end
+
+-- Technology icons
+-- -- Logistics
+if restore_vanilla_look("logistics") then
+  krastorio.icons.setTechnologyIcon("logistics", base_icons_path .. "../technology/logistics-1.png", 256, 4)
+  krastorio.icons.setTechnologyIcon("logistics-2", base_icons_path .. "../technology/logistics-2.png", 256, 4)
+  krastorio.icons.setTechnologyIcon("logistics-3", base_icons_path .. "../technology/logistics-3.png", 256, 4)
+  -- Icons of kr-logistic-4 and kr-logistic-5 will not change
+end
