@@ -107,6 +107,14 @@ if restore_vanilla_look("light-oil") then
   krastorio.icons.setItemIcon("light-oil", base_icons_path .. "fluid/light-oil.png", 64, 4)
 end
 
+--- Rocket fuel with Light oil
+local light_oil = data.raw.fluid["light-oil"]
+local rocket_fuel_icons = {
+  { icon = base_icons_path .. "rocket-fuel.png", icon_size = 64 },
+  { icon = base_icons_path .. "fluid/light-oil.png", icon_size = 64, scale = 0.26, shift = { 8, -8 } },
+}
+krastorio.icons.setRecipeIcons("rocket-fuel", rocket_fuel_icons)
+
 -- Heavy oil
 if restore_vanilla_look("heavy-oil") then
   krastorio.icons.setItemIcon("heavy-oil", base_icons_path .. "fluid/heavy-oil.png", 64, 4)
