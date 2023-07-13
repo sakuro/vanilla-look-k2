@@ -112,6 +112,19 @@ if restore_vanilla_look("light-oil") then
     { icon = base_icons_path .. "fluid/light-oil.png", icon_size = 64, scale = 0.26, shift = { 8, -8 } },
   }
   krastorio.icons.setRecipeIcons("rocket-fuel", rocket_fuel_icons)
+
+  --- Solid fuel with Light oil
+  local solid_fuel_icons = {
+    { icon = base_icons_path .. "solid-fuel-with-light-oil.png", icon_size = 64 },
+  }
+  krastorio.icons.setRecipeIcons("solid-fuel-with-light-oil", solid_fuel_icons)
+
+  -- Fuel with Light oil
+  local fuel_icons = {
+    { icon = kr_items_icons_path  .. "fuel.png", icon_size = 64 },
+    { icon = base_icons_path .. "fluid/light-oil.png", icon_size = 64, scale = 0.26, shift = { 8, -8 } },
+  }
+  krastorio.icons.setRecipeIcons("fuel-1", fuel_icons)
 end
 
 
