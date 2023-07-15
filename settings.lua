@@ -137,6 +137,14 @@ data:extend({
   },
   {
     type = "string-setting",
+    name = "vlk2-oil-processing",
+    setting_type = "startup",
+    allowed_values = {"vanilla", "k2"},
+    default_value = "k2",
+    order = "e:technology-2"
+  },
+  {
+    type = "string-setting",
     name = "vlk2-rocket-fuel",
     setting_type = "startup",
     allowed_values = {"vanilla", "k2"},
