@@ -88,6 +88,22 @@ if restore_vanilla_look("electric-mining-drill") then
   data.raw["mining-drill"]["electric-mining-drill"].icon = base_icons_path .. "electric-mining-drill.png"
 end
 
+-- Pumpjack
+if restore_vanilla_look("pumpjack") then
+  krastorio.icons.setItemIcon("pumpjack", base_icons_path .. "pumpjack.png", 64, 4)
+  data.raw["mining-drill"]["pumpjack"].radius_visualisation_picture.filename = "__base__/graphics/entity/pumpjack/pumpjack-radius-visualization.png"
+  data.raw["mining-drill"]["pumpjack"].base_picture.sheets[1].filename = "__base__/graphics/entity/pumpjack/pumpjack-base.png"
+  data.raw["mining-drill"]["pumpjack"].base_picture.sheets[1].hr_version.filename = "__base__/graphics/entity/pumpjack/hr-pumpjack-base.png"
+  data.raw["mining-drill"]["pumpjack"].base_picture.sheets[2].filename = "__base__/graphics/entity/pumpjack/pumpjack-base-shadow.png"
+  data.raw["mining-drill"]["pumpjack"].base_picture.sheets[2].hr_version.filename = "__base__/graphics/entity/pumpjack/hr-pumpjack-base-shadow.png"
+  data.raw["mining-drill"]["pumpjack"].animations.north.layers[1].filename = "__base__/graphics/entity/pumpjack/pumpjack-horsehead.png"
+  data.raw["mining-drill"]["pumpjack"].animations.north.layers[1].hr_version.filename = "__base__/graphics/entity/pumpjack/hr-pumpjack-horsehead.png"
+  data.raw["mining-drill"]["pumpjack"].animations.north.layers[2].filename = "__base__/graphics/entity/pumpjack/pumpjack-horsehead-shadow.png"
+  data.raw["mining-drill"]["pumpjack"].animations.north.layers[2].hr_version.filename = "__base__/graphics/entity/pumpjack/hr-pumpjack-horsehead-shadow.png"
+end
+
+
+
 -- Water
 if restore_vanilla_look("water") then
   krastorio.icons.setItemIcon("water", base_icons_path .. "fluid/water.png", 64, 4)
