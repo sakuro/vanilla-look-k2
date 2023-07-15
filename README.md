@@ -14,6 +14,7 @@ This MOD _selectively_ restores vanilla look of some items, recipes and technolo
 |Electronic circuit|![](docs/images/vanilla/electronic-circuit.png)|![](docs/images/k2/electronic-circuit.png)|
 |Advanced circuit|![](docs/images/vanilla/advanced-circuit.png)|![](docs/images/k2/advanced-circuit.png)|
 |Processing unit|![](docs/images/vanilla/processing-unit.png)|![](docs/images/k2/processing-unit.png)|
+|Electric mining drill|![](docs/images/vanilla/electric-mining-drill.png)|![](docs/images/k2/electric-mining-drill.png)|
 
 ### Fluid
 

@@ -49,11 +49,19 @@ data:extend({
   },
   {
     type = "string-setting",
+    name = "vlk2-electric-mining-drill",
+    setting_type = "startup",
+    allowed_values = {"vanilla", "k2"},
+    default_value = "k2",
+    order = "c:building-1"
+  },
+  {
+    type = "string-setting",
     name = "vlk2-water",
     setting_type = "startup",
     allowed_values = {"vanilla", "k2"},
     default_value = "k2",
-    order = "c:fluid-1"
+    order = "d:fluid-1"
   },
   {
     type = "string-setting",
@@ -61,7 +69,7 @@ data:extend({
     setting_type = "startup",
     allowed_values = {"vanilla", "k2"},
     default_value = "k2",
-    order = "c:fluid-2"
+    order = "d:fluid-2"
   },
   {
     type = "string-setting",
@@ -69,7 +77,7 @@ data:extend({
     setting_type = "startup",
     allowed_values = {"vanilla", "k2"},
     default_value = "k2",
-    order = "c:fluid-3"
+    order = "d:fluid-3"
   },
   {
     type = "string-setting",
@@ -77,7 +85,7 @@ data:extend({
     setting_type = "startup",
     allowed_values = {"vanilla", "k2"},
     default_value = "k2",
-    order = "c:fluid-4"
+    order = "d:fluid-4"
   },
   {
     type = "string-setting",
@@ -85,7 +93,7 @@ data:extend({
     setting_type = "startup",
     allowed_values = {"vanilla", "k2"},
     default_value = "k2",
-    order = "c:fluid-5"
+    order = "d:fluid-5"
   },
   {
     type = "string-setting",
@@ -93,7 +101,7 @@ data:extend({
     setting_type = "startup",
     allowed_values = {"vanilla", "k2"},
     default_value = "k2",
-    order = "c:fluid-6"
+    order = "d:fluid-6"
   },
   {
     type = "string-setting",
@@ -101,7 +109,7 @@ data:extend({
     setting_type = "startup",
     allowed_values = {"vanilla", "k2"},
     default_value = "k2",
-    order = "c:fluid-7"
+    order = "d:fluid-7"
   },
   {
     type = "string-setting",
@@ -109,7 +117,7 @@ data:extend({
     setting_type = "startup",
     allowed_values = {"vanilla", "k2"},
     default_value = "k2",
-    order = "c:fluid-8"
+    order = "d:fluid-8"
   },
   {
     type = "string-setting",
@@ -117,7 +125,7 @@ data:extend({
     setting_type = "startup",
     allowed_values = {"vanilla", "k2"},
     default_value = "k2",
-    order = "c:technology-1"
+    order = "e:technology-1"
   },
   {
     type = "string-setting",
@@ -125,6 +133,6 @@ data:extend({
     setting_type = "startup",
     allowed_values = {"vanilla", "k2"},
     default_value = "k2",
-    order = "c:recipe-1"
+    order = "f:recipe-1"
   }
 })

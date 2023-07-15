@@ -82,6 +82,12 @@ if restore_vanilla_look("processing-unit") then
   krastorio.icons.setItemIcon("processing-unit", base_icons_path .. "processing-unit.png", 64, 4)
 end
 
+-- Electric mining drill
+if restore_vanilla_look("electric-mining-drill") then
+  krastorio.icons.setItemIcon("electric-mining-drill", base_icons_path .. "electric-mining-drill.png")
+  data.raw["mining-drill"]["electric-mining-drill"].icon = base_icons_path .. "electric-mining-drill.png"
+end
+
 -- Water
 if restore_vanilla_look("water") then
   krastorio.icons.setItemIcon("water", base_icons_path .. "fluid/water.png", 64, 4)
