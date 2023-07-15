@@ -6,6 +6,7 @@
   "author": "sakuro",
   "description": "Restores vanilla look of some entities",
   "dependencies": [
+    "Krastorio2",
     "Krastorio2Assets"
   ],
   "ignore": [".git", ".github", ".gitignore"]
