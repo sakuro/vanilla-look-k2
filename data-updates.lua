@@ -156,18 +156,6 @@ if restore_vanilla_look("petroleum-gas") then
   krastorio.icons.setItemIcon("petroleum-gas", "__base__/graphics/icons/fluid/petroleum-gas.png", 64, 4)
 end
 
-if restore_vanilla_look("light-oil") and restore_vanilla_look("petroleum-gas") then
-  krastorio.icons.setRecipeIcon("light-oil-cracking", "__base__/graphics/icons/fluid/light-oil-cracking.png", 64, 4)
-end
-
-if restore_vanilla_look("heavy-oil") and restore_vanilla_look("light-oil") then
-  krastorio.icons.setRecipeIcon("heavy-oil-cracking", "__base__/graphics/icons/fluid/heavy-oil-cracking.png", 64, 4)
-end
-
-if restore_vanilla_look("heavy-oil") then
-  krastorio.icons.setRecipeIcon("coal-liquefaction", "__base__/graphics/icons/fluid/coal-liquefaction.png", 64, 4)
-end
-
 -- Recipe icons
 -- -- Rocket fuel with Light oil recipe
 if restore_vanilla_look("rocket-fuel") then
@@ -193,6 +181,54 @@ if restore_vanilla_look("rocket-fuel") then
   }
   krastorio.icons.setRecipeIcons("rocket-fuel-with-hydrogen-chloride", rocket_fuel_with_hydrogen_chloride_icons)
 end
+
+-- -- Heavy oil cracking
+if restore_vanilla_look("heavy-oil") then
+  if restore_vanilla_look("light-oil") then
+    krastorio.icons.setRecipeIcon("heavy-oil-cracking", "__base__/graphics/icons/fluid/heavy-oil-cracking.png", 64, 4)
+  else
+    krastorio.icons.setRecipeIcons("heavy-oil-cracking", {
+      { icon = "__vanilla-look-k2__/graphics/icons/transparent.png", icon_size = 64, scale = 0.500, shift = {0, 0} },
+      { icon = "__base__/graphics/icons/fluid/heavy-oil.png", icon_size = 64, scale = 0.334, shift = {0, -4} },
+      { icon = kr_fluids_icons_path .. "light-oil.png", icon_size = 64, scale = 0.250, shift = {-9, 7} },
+      { icon = kr_fluids_icons_path .. "light-oil.png", icon_size = 64, scale = 0.250, shift = {9, 7} }
+    })
+  end
+else
+  if restore_vanilla_look("light-oil") then
+    krastorio.icons.setRecipeIcons("heavy-oil-cracking", {
+      { icon = "__vanilla-look-k2__/graphics/icons/transparent.png", icon_size = 64, scale = 0.500, shift = {0, 0} },
+      { icon = kr_fluids_icons_path .. "heavy-oil.png", icon_size = 64, scale = 0.334, shift = {0, -4} },
+      { icon = "__base__/graphics/icons/fluid/light-oil.png", icon_size = 64, scale = 0.250, shift = {-9, 7} },
+      { icon = "__base__/graphics/icons/fluid/light-oil.png", icon_size = 64, scale = 0.250, shift = {9, 7} }
+    })
+  end
+end
+
+-- -- Light oil cracking
+if restore_vanilla_look("light-oil") then
+  if restore_vanilla_look("petroleum-gas") then
+    krastorio.icons.setRecipeIcon("light-oil-cracking", "__base__/graphics/icons/fluid/light-oil-cracking.png", 64, 4)
+  else
+    krastorio.icons.setRecipeIcons("light-oil-cracking", {
+      { icon = "__vanilla-look-k2__/graphics/icons/transparent.png", icon_size = 64, scale = 0.500, shift = {0, 0} },
+      { icon = "__base__/graphics/icons/fluid/light-oil.png", icon_size = 64, scale = 0.334, shift = {0, -4} },
+      { icon = kr_fluids_icons_path .. "petroleum-gas.png", icon_size = 64, scale = 0.250, shift = {-9, 7} },
+      { icon = kr_fluids_icons_path .. "petroleum-gas.png", icon_size = 64, scale = 0.250, shift = {9, 7} }
+    })
+  end
+else
+  if restore_vanilla_look("petroleum-gas") then
+    krastorio.icons.setRecipeIcons("light-oil-cracking", {
+      { icon = "__vanilla-look-k2__/graphics/icons/transparent.png", icon_size = 64, scale = 0.500, shift = {0, 0} },
+      { icon = kr_fluids_icons_path .. "light-oil.png", icon_size = 64, scale = 0.334, shift = {0, -4} },
+      { icon = "__base__/graphics/icons/fluid/petroleum-gas.png", icon_size = 64, scale = 0.250, shift = {-9, 7} },
+      { icon = "__base__/graphics/icons/fluid/petroleum-gas.png", icon_size = 64, scale = 0.250, shift = {9, 7} }
+    })
+  end
+end
+
+-- krastorio.icons.setRecipeIcon("coal-liquefaction", kr_recipes_icons_path .. "coal-liquefaction.png", 64, 4)
 
 -- Technology icons
 -- -- Logistics
