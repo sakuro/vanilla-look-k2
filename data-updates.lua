@@ -106,13 +106,6 @@ end
 if restore_vanilla_look("light-oil") then
   krastorio.icons.setItemIcon("light-oil", base_icons_path .. "fluid/light-oil.png", 64, 4)
 
-  --- Rocket fuel with Light oil
-  local rocket_fuel_icons = {
-    { icon = base_icons_path .. "rocket-fuel.png", icon_size = 64 },
-    { icon = base_icons_path .. "fluid/light-oil.png", icon_size = 64, scale = 0.26, shift = { 8, -8 } },
-  }
-  krastorio.icons.setRecipeIcons("rocket-fuel", rocket_fuel_icons)
-
   --- Solid fuel with Light oil
   local solid_fuel_icons = {
     { icon = base_icons_path .. "solid-fuel-with-light-oil.png", icon_size = 64 },
@@ -153,6 +146,32 @@ end
 
 if restore_vanilla_look("heavy-oil") then
   krastorio.icons.setRecipeIcon("coal-liquefaction", base_icons_path .. "fluid/coal-liquefaction.png", 64, 4)
+end
+
+-- Recipe icons
+-- -- Rocket fuel with Light oil recipe
+if restore_vanilla_look("rocket-fuel") then
+  local rocket_fuel_icons = {
+    { icon = base_icons_path .. "rocket-fuel.png", icon_size = 64 }
+  }
+  if restore_vanilla_look("light-oil") then
+    table.insert(rocket_fuel_icons, { icon = base_icons_path .. "fluid/light-oil.png", icon_size = 64, scale = 0.26, shift = { 8, -8 } })
+  else
+    table.insert(rocket_fuel_icons, { icon = kr_fluids_icons_path .. "light-oil.png", icon_size = 64, scale = 0.26, shift = { 8, -8 } })
+  end
+  krastorio.icons.setRecipeIcons("rocket-fuel", rocket_fuel_icons)
+
+  local rocket_fuel_with_ammonia_icons = {
+    { icon = base_icons_path .. "rocket-fuel.png", icon_size = 64 },
+    { icon = kr_fluids_icons_path .. "ammonia.png", icon_size = 64, scale = 0.26, shift = { 8, -8 } }
+  }
+  krastorio.icons.setRecipeIcons("rocket-fuel-with-ammonia", rocket_fuel_with_ammonia_icons)
+
+  local rocket_fuel_with_hydrogen_chloride_icons = {
+    { icon = base_icons_path .. "rocket-fuel.png", icon_size = 64 },
+    { icon = kr_fluids_icons_path .. "hydrogen-chloride.png", icon_size = 64, scale = 0.26, shift = { 8, -8 } }
+  }
+  krastorio.icons.setRecipeIcons("rocket-fuel-with-hydrogen-chloride", rocket_fuel_with_hydrogen_chloride_icons)
 end
 
 -- Technology icons

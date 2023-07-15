@@ -118,5 +118,13 @@ data:extend({
     allowed_values = {"vanilla", "k2"},
     default_value = "k2",
     order = "c:technology-1"
+  },
+  {
+    type = "string-setting",
+    name = "vlk2-rocket-fuel",
+    setting_type = "startup",
+    allowed_values = {"vanilla", "k2"},
+    default_value = "k2",
+    order = "c:recipe-1"
   }
 })
