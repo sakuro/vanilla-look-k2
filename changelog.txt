@@ -1,5 +1,5 @@
 ---------------------------------------------------------------------------------------------------
 Version: Unreleased
-Date: YYYY-MM-DD
+Date: 2023-07-16
   Changes:
-    - Still in development
+    - First release
