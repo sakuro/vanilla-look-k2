@@ -33,4 +33,14 @@ This MOD _selectively_ restores vanilla look of some items, recipes and technolo
 
 ### Recipes
 
-## Technologies
+||Vanilla | Krastorio 2|
+|-|-|-|
+|Coal liquefaction|![](docs/images/vanilla/recipe/coal-liquefaction.png)|![](docs/images/k2/recipe/coal-liquefaction.png)|
+
+### Technologies
+
+||Vanilla | Krastorio 2|
+|-|-|-|
+|Logistics|![](docs/images/vanilla/technology/logistics-1.png)|![](docs/images/k2/technology/logistics-1.png)|
+|Oil processing|![](docs/images/vanilla/technology/oil-gathering.png)|![](docs/images/k2/technology/oil-gathering.png)|
+|Coal liquefaction|![](docs/images/vanilla/technology/coal-liquefaction.png)|![](docs/images/k2/technology/coal-liquefaction.png)|
