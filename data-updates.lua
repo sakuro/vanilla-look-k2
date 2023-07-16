@@ -6,58 +6,32 @@ end
 if restore_vanilla_look("iron-plate") then
   krastorio.icons.setItemIcon("iron-plate", "__base__/graphics/icons/iron-plate.png", 64, 4)
   -- recipe
-  local recipe = krastorio.recipes.getRecipeFromName("iron-plate")
-  if recipe then
-    recipe.icon = nil
-    recipe.icon_size = 64
+  krastorio.icons.setRecipeIcons("iron-plate", {
+    { icon = "__base__/graphics/icons/iron-plate.png", icon_size = 64 },
+    { icon = "__base__/graphics/icons/iron-ore.png", icon_size = 64, scale = 0.22, shift = { -8, -8 } }
+  })
 
-    local variation = krastorio.items.getItem("iron-ore")
-    recipe.icons = {
-      { icon = "__base__/graphics/icons/iron-plate.png", icon_size = 64 },
-      { icon = variation.icon, icon_size = variation.icon_size, scale = 0.22, shift = { -8, -8 } },
-    }
-  end
-
-  local recipe = krastorio.recipes.getRecipeFromName("enriched-iron-plate")
-  if recipe then
-    recipe.icon = nil
-    recipe.icon_size = 64
-
-    local variation = krastorio.items.getItem("enriched-iron")
-    recipe.icons = {
-      { icon = "__base__/graphics/icons/iron-plate.png", icon_size = 64 },
-      { icon = variation.icon, icon_size = variation.icon_size, scale = 0.22, shift = { -8, -8 } },
-    }
-  end
+  local enriched = krastorio.items.getItem("enriched-iron")
+  krastorio.icons.setRecipeIcons("enriched-iron-plate", {
+    { icon = "__base__/graphics/icons/iron-plate.png", icon_size = 64 },
+    { icon = enriched.icon, icon_size = enriched.icon_size, scale = 0.22, shift = { -8, -8 } }
+  })
 end
 
 -- Copper plate
 if restore_vanilla_look("copper-plate") then
   krastorio.icons.setItemIcon("copper-plate", "__base__/graphics/icons/copper-plate.png", 64, 4)
   -- recipe
-  local recipe = krastorio.recipes.getRecipeFromName("copper-plate")
-  if recipe then
-    recipe.icon = nil
-    recipe.icon_size = 64
+  krastorio.icons.setRecipeIcons("copper-plate", {
+    { icon = "__base__/graphics/icons/copper-plate.png", icon_size = 64 },
+    { icon = "__base__/graphics/icons/copper-ore.png", icon_size = 64, scale = 0.22, shift = { -8, -8 } }
+  })
 
-    local variation = krastorio.items.getItem("copper-ore")
-    recipe.icons = {
-      { icon = "__base__/graphics/icons/copper-plate.png", icon_size = 64 },
-      { icon = variation.icon, icon_size = variation.icon_size, scale = 0.22, shift = { -8, -8 } },
-    }
-  end
-
-  local recipe = krastorio.recipes.getRecipeFromName("enriched-copper-plate")
-  if recipe then
-    recipe.icon = nil
-    recipe.icon_size = 64
-
-    local variation = krastorio.items.getItem("enriched-copper")
-    recipe.icons = {
-      { icon = "__base__/graphics/icons/copper-plate.png", icon_size = 64 },
-      { icon = variation.icon, icon_size = variation.icon_size, scale = 0.22, shift = { -8, -8 } },
-    }
-  end
+  local enriched = krastorio.items.getItem("enriched-copper")
+  krastorio.icons.setRecipeIcons("enriched-copper-plate", {
+    { icon = "__base__/graphics/icons/copper-plate.png", icon_size = 64 },
+    { icon = enriched.icon, icon_size = enriched.icon_size, scale = 0.22, shift = { -8, -8 } }
+  })
 end
 
 -- Iron gear wheel
@@ -100,8 +74,6 @@ if restore_vanilla_look("pumpjack") then
   data.raw["mining-drill"]["pumpjack"].animations.north.layers[2].hr_version.filename = "__base__/graphics/entity/pumpjack/hr-pumpjack-horsehead-shadow.png"
 end
 
-
-
 -- Water
 if restore_vanilla_look("water") then
   krastorio.icons.setItemIcon("water", "__base__/graphics/icons/fluid/water.png", 64, 4)
@@ -127,17 +99,13 @@ if restore_vanilla_look("light-oil") then
   krastorio.icons.setItemIcon("light-oil", "__base__/graphics/icons/fluid/light-oil.png", 64, 4)
 
   --- Solid fuel with Light oil
-  local solid_fuel_icons = {
-    { icon = "__base__/graphics/icons/solid-fuel-with-light-oil.png", icon_size = 64 },
-  }
-  krastorio.icons.setRecipeIcons("solid-fuel-with-light-oil", solid_fuel_icons)
+  krastorio.icons.setRecipeIcon("solid-fuel-with-light-oil", "__base__/graphics/icons/solid-fuel-from-light-oil.png", 64, 4)
 
   -- Fuel with Light oil
-  local fuel_icons = {
-    { icon = kr_items_icons_path  .. "fuel.png", icon_size = 64 },
-    { icon = "__base__/graphics/icons/fluid/light-oil.png", icon_size = 64, scale = 0.26, shift = { 8, -8 } },
-  }
-  krastorio.icons.setRecipeIcons("fuel-1", fuel_icons)
+  krastorio.icons.setRecipeIcons("fuel-1", {
+    { icon = kr_items_icons_path .. "fuel.png", icon_size = 64 },
+    { icon = "__base__/graphics/icons/fluid/light-oil.png", icon_size = 64, scale = 0.26, shift = { 8, -8 } }
+  })
 end
 
 
@@ -159,27 +127,27 @@ end
 -- Recipe icons
 -- -- Rocket fuel with Light oil recipe
 if restore_vanilla_look("rocket-fuel") then
-  local rocket_fuel_icons = {
-    { icon = "__base__/graphics/icons/rocket-fuel.png", icon_size = 64 }
-  }
   if restore_vanilla_look("light-oil") then
-    table.insert(rocket_fuel_icons, { icon = "__base__/graphics/icons/fluid/light-oil.png", icon_size = 64, scale = 0.26, shift = { 8, -8 } })
+    krastorio.icons.setRecipeIcons("rocket-fuel", {
+      { icon = "__base__/graphics/icons/rocket-fuel.png", icon_size = 64 },
+      { icon = "__base__/graphics/icons/fluid/light-oil.png", icon_size = 64, scale = 0.26, shift = { 8, -8 } }
+    })
   else
-    table.insert(rocket_fuel_icons, { icon = kr_fluids_icons_path .. "light-oil.png", icon_size = 64, scale = 0.26, shift = { 8, -8 } })
+    krastorio.icons.setRecipeIcons("rocket-fuel", {
+      { icon = "__base__/graphics/icons/rocket-fuel.png", icon_size = 64 },
+      { icon = kr_fluids_icons_path .. "light-oil.png", icon_size = 64, scale = 0.26, shift = { 8, -8 } }
+    })
   end
-  krastorio.icons.setRecipeIcons("rocket-fuel", rocket_fuel_icons)
 
-  local rocket_fuel_with_ammonia_icons = {
+  krastorio.icons.setRecipeIcons("rocket-fuel-with-ammonia", {
     { icon = "__base__/graphics/icons/rocket-fuel.png", icon_size = 64 },
     { icon = kr_fluids_icons_path .. "ammonia.png", icon_size = 64, scale = 0.26, shift = { 8, -8 } }
-  }
-  krastorio.icons.setRecipeIcons("rocket-fuel-with-ammonia", rocket_fuel_with_ammonia_icons)
+  })
 
-  local rocket_fuel_with_hydrogen_chloride_icons = {
+  krastorio.icons.setRecipeIcons("rocket-fuel-with-hydrogen-chloride", {
     { icon = "__base__/graphics/icons/rocket-fuel.png", icon_size = 64 },
     { icon = kr_fluids_icons_path .. "hydrogen-chloride.png", icon_size = 64, scale = 0.26, shift = { 8, -8 } }
-  }
-  krastorio.icons.setRecipeIcons("rocket-fuel-with-hydrogen-chloride", rocket_fuel_with_hydrogen_chloride_icons)
+  })
 end
 
 -- -- Heavy oil cracking
