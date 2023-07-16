@@ -73,7 +73,7 @@ if util.restore_vanilla_look("heavy-oil") then
   end
 
   -- Coal liquefaction
-  krastorio.icons.setRecipeIcon("coal-liquefaction", "__base__/graphics/icons/coal-liquefaction.png", 64, 4)
+  krastorio.icons.setRecipeIcon("coal-liquefaction", "__base__/graphics/icons/fluid/coal-liquefaction.png", 64, 4)
 else
   -- Heavy oil cracking with k2's heavy oil icon
   if util.restore_vanilla_look("light-oil") then
