@@ -29,7 +29,7 @@ This MOD _selectively_ restores vanilla look of some items, recipes and technolo
 |Petroleum gas|![](docs/images/vanilla/fluid/petroleum-gas.png)|![](docs/images/k2/fluid/petroleum-gas.png)|
 |Light oil|![](docs/images/vanilla/fluid/light-oil.png)|![](docs/images/k2/fluid/light-oil.png)|
 |Heavy oil|![](docs/images/vanilla/fluid/heavy-oil.png)|![](docs/images/k2/fluid/heavy-oil.png)|
-|Sulfuria acid|![](docs/images/vanilla/fluid/sulfuric-acid.png)|![](docs/images/k2/fluid/sulfuric-acid.png)|
+|Sulfuric acid|![](docs/images/vanilla/fluid/sulfuric-acid.png)|![](docs/images/k2/fluid/sulfuric-acid.png)|
 |Lubricant|![](docs/images/vanilla/fluid/lubricant.png)|![](docs/images/k2/fluid/lubricant.png)|
 
 ### Recipes
