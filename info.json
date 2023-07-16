@@ -4,7 +4,7 @@
   "factorio_version": "1.1",
   "title": "Vanilla Look: Krastorio 2",
   "author": "sakuro",
-  "description": "Restores vanilla look of some entities",
+  "description": "Restores vanilla look of some items, recipes and technologies",
   "dependencies": [
     "Krastorio2",
     "Krastorio2Assets"
