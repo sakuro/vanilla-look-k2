@@ -10,6 +10,11 @@ if util.restore_vanilla_look("copper-plate") then
   krastorio.icons.setItemIcon("copper-plate", "__base__/graphics/icons/copper-plate.png", 64, 4)
 end
 
+-- Steel plate
+if util.restore_vanilla_look("steel-plate") then
+  krastorio.icons.setItemIcon("steel-plate", "__base__/graphics/icons/steel-plate.png", 64, 4)
+end
+
 -- Iron gear wheel
 if util.restore_vanilla_look("iron-gear-wheel") then
   krastorio.icons.setItemIcon("iron-gear-wheel", "__base__/graphics/icons/iron-gear-wheel.png", 64, 4)

@@ -17,6 +17,14 @@ data:extend({
   },
   {
     type = "string-setting",
+    name = "vlk2-steel-plate",
+    setting_type = "startup",
+    allowed_values = {"vanilla", "k2"},
+    default_value = "k2",
+    order = "a:plate-3"
+  },
+  {
+    type = "string-setting",
     name = "vlk2-iron-gear-wheel",
     setting_type = "startup",
     allowed_values = {"vanilla", "k2"},

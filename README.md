@@ -10,6 +10,7 @@ This MOD _selectively_ restores vanilla look of some items, recipes and technolo
 |-|-|-|
 |Iron plate|![](docs/images/vanilla/iron-plate.png)|![](docs/images/k2/iron-plate.png)|
 |Copper plate|![](docs/images/vanilla/copper-plate.png)|![](docs/images/k2/copper-plate.png)|
+|Steel plate|![](docs/images/vanilla/steel-plate.png)|![](docs/images/k2/steel-plate.png)|
 |Iron gear wheel|![](docs/images/vanilla/iron-gear-wheel.png)|![](docs/images/k2/iron-gear-wheel.png)|
 |Electronic circuit|![](docs/images/vanilla/electronic-circuit.png)|![](docs/images/k2/electronic-circuit.png)|
 |Advanced circuit|![](docs/images/vanilla/advanced-circuit.png)|![](docs/images/k2/advanced-circuit.png)|
