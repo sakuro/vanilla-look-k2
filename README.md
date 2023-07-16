@@ -44,3 +44,4 @@ This MOD _selectively_ restores vanilla look of some items, recipes and technolo
 |Logistics|![](docs/images/vanilla/technology/logistics-1.png)|![](docs/images/k2/technology/logistics-1.png)|
 |Oil processing|![](docs/images/vanilla/technology/oil-gathering.png)|![](docs/images/k2/technology/oil-gathering.png)|
 |Coal liquefaction|![](docs/images/vanilla/technology/coal-liquefaction.png)|![](docs/images/k2/technology/coal-liquefaction.png)|
+|Steel axe|![](docs/images/vanilla/technology/steel-axe.png)|![](docs/images/k2/technology/steel-pickaxe.png)|

@@ -18,3 +18,10 @@ if util.restore_vanilla_look("heavy-oil") then
   -- Coal liquefaction
   krastorio.icons.setTechnologyIcon("coal-liquefaction", "__base__/graphics/technology/coal-liquefaction.png", 256, 4)
 end
+
+if util.restore_vanilla_look("steel-axe") then
+  krastorio.icons.setTechnologyIcons("steel-axe", {
+    { icon = "__base__/graphics/technology/steel-axe.png", icon_size = 256, icon_mipmaps = 4 },
+    { icon = "__core__/graphics/icons/technology/constants/constant-mining.png", icon_size = 128, icon_mipmaps = 3, shift = { 100, 100 }},
+  }, 256, 4)
+end
