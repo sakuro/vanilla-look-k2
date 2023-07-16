@@ -99,3 +99,15 @@ end
 if util.restore_vanilla_look("petroleum-gas") then
   krastorio.icons.setItemIcon("petroleum-gas", "__base__/graphics/icons/fluid/petroleum-gas.png", 64, 4)
 end
+
+-- Atomic bomb
+if util.restore_vanilla_look("atomic-bomb") then
+  krastorio.icons.setItemIcon("atomic-bomb", "__base__/graphics/icons/atomic-bomb.png", 64, 4)
+  data.raw.ammo["atomic-bomb"].pictures.layers[1].filename = "__base__/graphics/icons/atomic-bomb.png"
+  data.raw.ammo["atomic-bomb"].pictures.layers[2].filename = "__base__/graphics/icons/atomic-bomb-light.png"
+end
+
+-- Artillery shell
+if util.restore_vanilla_look("artillery-shell") then
+  krastorio.icons.setItemIcon("artillery-shell", "__base__/graphics/icons/artillery-shell.png", 64, 4)
+end

@@ -18,6 +18,8 @@ This MOD _selectively_ restores vanilla look of some items, recipes and technolo
 |Electric mining drill|![](docs/images/vanilla/electric-mining-drill.png)|![](docs/images/k2/electric-mining-drill.png)|
 |(Oil) Pumpjack|![](docs/images/vanilla/pumpjack.png)|![](docs/images/k2/oil-pumpjack.png)|
 |Substation|![](docs/images/vanilla/substation.png)|![](docs/images/k2/substation.png)|
+|Atomic bomb|![](docs/images/vanilla/atomic-bomb.png)|![](docs/images/k2/atomic-bomb.png)|
+|Artillery shell|![](docs/images/vanilla/artillery-shell.png)|![](docs/images/k2/artillery-shell.png)|
 
 ### Fluid
 
