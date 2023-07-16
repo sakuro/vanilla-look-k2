@@ -28,7 +28,7 @@ end
 
 if util.restore_vanilla_look("light-oil") then
   --- Solid fuel with Light oil
-  krastorio.icons.setRecipeIcon("solid-fuel-with-light-oil", "__base__/graphics/icons/solid-fuel-from-light-oil.png", 64, 4)
+  krastorio.icons.setRecipeIcon("solid-fuel-from-light-oil", "__base__/graphics/icons/solid-fuel-from-light-oil.png", 64, 4)
 
   -- Fuel with Light oil
   krastorio.icons.setRecipeIcons("fuel-1", {
@@ -48,6 +48,13 @@ if util.restore_vanilla_look("light-oil") then
     })
   end
 else
+  -- Solid fuel with Light oil
+  -- https://github.com/raiguard/Krastorio2/pull/362
+  krastorio.icons.setRecipeIcons("solid-fuel-from-light-oil", {
+    { icon = "__base__/graphics/icons/solid-fuel.png", icon_size = 64 },
+    { icon = kr_fluids_icons_path .. "light-oil.png", icon_size = data.raw.fluid["light-oil"].icon_size or 64, scale = 0.26, shift = { -8, -8 } }
+  })
+
   -- Light oil cracking with K2's light oil icon
   if util.restore_vanilla_look("petroleum-gas") then
     krastorio.icons.setRecipeIcons("light-oil-cracking", {
@@ -60,6 +67,9 @@ else
 end
 
 if util.restore_vanilla_look("heavy-oil") then
+  --- Solid fuel with Heady oil
+  krastorio.icons.setRecipeIcon("solid-fuel-from-heavy-oil", "__base__/graphics/icons/solid-fuel-from-heavy-oil.png", 64, 4)
+
   -- Heavy oil cracking with vanilla heavy oil icon
   if util.restore_vanilla_look("light-oil") then
     krastorio.icons.setRecipeIcon("heavy-oil-cracking", "__base__/graphics/icons/fluid/heavy-oil-cracking.png", 64, 4)
@@ -75,6 +85,13 @@ if util.restore_vanilla_look("heavy-oil") then
   -- Coal liquefaction
   krastorio.icons.setRecipeIcon("coal-liquefaction", "__base__/graphics/icons/fluid/coal-liquefaction.png", 64, 4)
 else
+  -- Solid fuel with Heavy oil
+  -- https://github.com/raiguard/Krastorio2/pull/362
+  krastorio.icons.setRecipeIcons("solid-fuel-from-heavy-oil", {
+    { icon = "__base__/graphics/icons/solid-fuel.png", icon_size = 64 },
+    { icon = kr_fluids_icons_path .. "heavy-oil.png", icon_size = data.raw.fluid["heavy-oil"].icon_size or 64, scale = 0.26, shift = { -8, -8 } }
+  })
+
   -- Heavy oil cracking with k2's heavy oil icon
   if util.restore_vanilla_look("light-oil") then
     krastorio.icons.setRecipeIcons("heavy-oil-cracking", {
@@ -84,6 +101,18 @@ else
       { icon = "__base__/graphics/icons/fluid/light-oil.png", icon_size = 64, scale = 0.250, shift = {9, 7} }
     })
   end
+end
+
+if util.restore_vanilla_look("petroleum-gas") then
+  --- Solid fuel with Petroleum gas
+  krastorio.icons.setRecipeIcon("solid-fuel-from-petroleum-gas", "__base__/graphics/icons/solid-fuel-from-petroleum-gas.png", 64, 4)
+else
+  -- Solid fuel with Petroleum gas
+  -- https://github.com/raiguard/Krastorio2/pull/362
+  krastorio.icons.setRecipeIcons("solid-fuel-from-petroleum-gas", {
+    { icon = "__base__/graphics/icons/solid-fuel.png", icon_size = 64 },
+    { icon = kr_fluids_icons_path .. "petroleum-gas.png", icon_size = data.raw.fluid["petroleum-gas"].icon_size or 64, scale = 0.26, shift = { -8, -8 } }
+  })
 end
 
 -- Rocket fuel with Light oil recipe
