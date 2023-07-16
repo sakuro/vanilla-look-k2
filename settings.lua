@@ -65,6 +65,14 @@ data:extend({
   },
   {
     type = "string-setting",
+    name = "vlk2-substation",
+    setting_type = "startup",
+    allowed_values = {"vanilla", "k2"},
+    default_value = "k2",
+    order = "c:building-3"
+  },
+  {
+    type = "string-setting",
     name = "vlk2-water",
     setting_type = "startup",
     allowed_values = {"vanilla", "k2"},

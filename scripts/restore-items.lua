@@ -50,6 +50,11 @@ if util.restore_vanilla_look("pumpjack") then
   data.raw["mining-drill"]["pumpjack"].animations.north.layers[2].hr_version.filename = "__base__/graphics/entity/pumpjack/hr-pumpjack-horsehead-shadow.png"
 end
 
+-- Substation
+if util.restore_vanilla_look("substation") then
+  krastorio.icons.setItemIcon("substation", "__base__/graphics/icons/substation.png", 64, 4)
+end
+
 -- Water
 if util.restore_vanilla_look("water") then
   krastorio.icons.setItemIcon("water", "__base__/graphics/icons/fluid/water.png", 64, 4)
