@@ -1,5 +1,9 @@
 # Vanilla Look: Krastorio 2
 
+![https://mods.factorio.com/mod/vanilla-look-k2](https://img.shields.io/badge/dynamic/json.svg?label=Downloads&url=https%3A%2F%2Fmods.factorio.com%2Fapi%2Fmods%2Fvanilla-look-k2&query=%24.downloads_count&colorB=%2343d463)
+
+## Summary
+
 This MOD _selectively_ restores vanilla look of some items, recipes and technologies which are changed in Krastorio 2.
 
 ## Difference of icons between Vanilla and Krastorio 2
