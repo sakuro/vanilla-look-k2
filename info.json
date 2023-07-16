@@ -8,6 +8,5 @@
   "dependencies": [
     "Krastorio2",
     "Krastorio2Assets"
-  ],
-  "ignore": [".git", ".github", ".gitignore"]
+  ]
 }
