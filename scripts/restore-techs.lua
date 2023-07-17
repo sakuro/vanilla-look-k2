@@ -28,7 +28,7 @@ if util.restore_vanilla_look("steel-axe") then
 end
 
 -- Steel processing
-if util.restore_vanilla_look("steel-axe") then
+if util.restore_vanilla_look("steel-processing") then
   krastorio.icons.setTechnologyIcon("steel-processing", "__base__/graphics/technology/steel-processing.png", 256, 4)
 end
 
