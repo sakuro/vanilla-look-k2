@@ -111,3 +111,64 @@ end
 if util.restore_vanilla_look("artillery-shell") then
   krastorio.icons.setItemIcon("artillery-shell", "__base__/graphics/icons/artillery-shell.png", 64, 4)
 end
+
+-- Exoskeleton
+if util.restore_vanilla_look("exoskeleton-equipment") then
+  krastorio.icons.setItemIcon("exoskeleton-equipment", "__base__/graphics/icons/exoskeleton-equipment.png", 64, 4)
+  data.raw["movement-bonus-equipment"]["exoskeleton-equipment"].sprite.filename = "__base__/graphics/equipment/exoskeleton-equipment.png"
+  data.raw["movement-bonus-equipment"]["exoskeleton-equipment"].sprite.hr_version.filename = "__base__/graphics/equipment/hr-exoskeleton-equipment.png"
+end
+
+-- Nightvision
+if util.restore_vanilla_look("night-vision-equipment") then
+  krastorio.icons.setItemIcon("night-vision-equipment", "__base__/graphics/icons/night-vision-equipment.png", 64, 4)
+  data.raw["night-vision-equipment"]["night-vision-equipment"].sprite.filename = "__base__/graphics/equipment/night-vision-equipment.png"
+  data.raw["night-vision-equipment"]["night-vision-equipment"].sprite.hr_version.filename = "__base__/graphics/equipment/hr-night-vision-equipment.png"
+end
+
+-- Personal battery
+if util.restore_vanilla_look("battery-equipment") then
+  krastorio.icons.setItemIcon("battery-equipment", "__base__/graphics/icons/battery-equipment.png", 64, 4)
+  data.raw["battery-equipment"]["battery-equipment"].sprite.filename = "__base__/graphics/equipment/battery-equipment.png"
+  data.raw["battery-equipment"]["battery-equipment"].sprite.hr_version.filename = "__base__/graphics/equipment/hr-battery-equipment.png"
+
+  krastorio.icons.setItemIcon("battery-mk2-equipment", "__base__/graphics/icons/battery-mk2-equipment.png", 64, 4)
+  data.raw["battery-equipment"]["battery-mk2-equipment"].sprite.filename = "__base__/graphics/equipment/battery-mk2-equipment.png"
+  data.raw["battery-equipment"]["battery-mk2-equipment"].sprite.hr_version.filename = "__base__/graphics/equipment/hr-battery-mk2-equipment.png"
+end
+
+-- Shield generator
+if util.restore_vanilla_look("energy-shield-equipment") then
+  krastorio.icons.setItemIcon("energy-shield-equipment", "__base__/graphics/icons/energy-shield-equipment.png", 64, 4)
+  data.raw["energy-shield-equipment"]["energy-shield-equipment"].sprite.filename = "__base__/graphics/equipment/energy-shield-equipment.png"
+  data.raw["energy-shield-equipment"]["energy-shield-equipment"].sprite.hr_version.filename = "__base__/graphics/equipment/hr-energy-shield-equipment.png"
+
+  krastorio.icons.setItemIcon("energy-shield-mk2-equipment", "__base__/graphics/icons/energy-shield-mk2-equipment.png", 64, 4)
+  data.raw["energy-shield-equipment"]["energy-shield-mk2-equipment"].sprite.filename = "__base__/graphics/equipment/energy-shield-mk2-equipment.png"
+  data.raw["energy-shield-equipment"]["energy-shield-mk2-equipment"].sprite.hr_version.filename = "__base__/graphics/equipment/hr-energy-shield-mk2-equipment.png"
+end
+
+-- Personal fusion reactor
+if util.restore_vanilla_look("fusion-reactor-equipment") then
+  krastorio.icons.setItemIcon("fusion-reactor-equipment", "__base__/graphics/icons/fusion-reactor-equipment.png", 64, 4)
+  data.raw["generator-equipment"]["fusion-reactor-equipment"].sprite.filename = "__base__/graphics/equipment/fusion-reactor-equipment.png"
+  data.raw["generator-equipment"]["fusion-reactor-equipment"].sprite.hr_version.filename = "__base__/graphics/equipment/hr-fusion-reactor-equipment.png"
+end
+
+-- Personal sniper laser defense
+if util.restore_vanilla_look("personal-laser-defense-equipment") then
+  krastorio.icons.setItemIcon("personal-laser-defense-equipment", "__base__/graphics/icons/personal-laser-defense-equipment.png", 64, 4)
+  data.raw["active-defense-equipment"]["personal-laser-defense-equipment"].sprite.filename = "__base__/graphics/equipment/personal-laser-defense-equipment.png"
+  data.raw["active-defense-equipment"]["personal-laser-defense-equipment"].sprite.hr_version.filename = "__base__/graphics/equipment/hr-personal-laser-defense-equipment.png"
+end
+
+-- Personal roboport
+if util.restore_vanilla_look("personal-roboport-equipment") then
+  krastorio.icons.setItemIcon("personal-roboport-equipment", "__base__/graphics/icons/personal-roboport-equipment.png", 64, 4)
+  data.raw["roboport-equipment"]["personal-roboport-equipment"].sprite.filename = "__base__/graphics/equipment/personal-roboport-equipment.png"
+  data.raw["roboport-equipment"]["personal-roboport-equipment"].sprite.hr_version.filename = "__base__/graphics/equipment/hr-personal-roboport-equipment.png"
+
+  krastorio.icons.setItemIcon("personal-roboport-mk2-equipment", "__base__/graphics/icons/personal-roboport-mk2-equipment.png", 64, 4)
+  data.raw["roboport-equipment"]["personal-roboport-mk2-equipment"].sprite.filename = "__base__/graphics/equipment/personal-roboport-mk2-equipment.png"
+  data.raw["roboport-equipment"]["personal-roboport-mk2-equipment"].sprite.hr_version.filename = "__base__/graphics/equipment/hr-personal-roboport-mk2-equipment.png"
+end

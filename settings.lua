@@ -198,5 +198,61 @@ data:extend({
     allowed_values = {"vanilla", "k2"},
     default_value = "k2",
     order = "g:recipe-1"
+  },
+  {
+    type = "string-setting",
+    name = "vlk2-exoskeleton-equipment",
+    setting_type = "startup",
+    allowed_values = {"vanilla", "k2"},
+    default_value = "k2",
+    order = "h:equipment-1"
+  },
+  {
+    type = "string-setting",
+    name = "vlk2-night-vision-equipment",
+    setting_type = "startup",
+    allowed_values = {"vanilla", "k2"},
+    default_value = "k2",
+    order = "h:equipment-2"
+  },
+  {
+    type = "string-setting",
+    name = "vlk2-battery-equipment",
+    setting_type = "startup",
+    allowed_values = {"vanilla", "k2"},
+    default_value = "k2",
+    order = "h:equipment-3"
+  },
+  {
+    type = "string-setting",
+    name = "vlk2-energy-shield-equipment",
+    setting_type = "startup",
+    allowed_values = {"vanilla", "k2"},
+    default_value = "k2",
+    order = "h:equipment-4"
+  },
+  {
+    type = "string-setting",
+    name = "vlk2-fusion-reactor-equipment",
+    setting_type = "startup",
+    allowed_values = {"vanilla", "k2"},
+    default_value = "k2",
+    order = "h:equipment-5"
+  },
+  {
+    type = "string-setting",
+    name = "vlk2-personal-laser-defense-equipment",
+    setting_type = "startup",
+    allowed_values = {"vanilla", "k2"},
+    default_value = "k2",
+    order = "h:equipment-6"
+  },
+  {
+    type = "string-setting",
+    name = "vlk2-personal-roboport-equipment",
+    setting_type = "startup",
+    allowed_values = {"vanilla", "k2"},
+    default_value = "k2",
+    order = "h:equipment-7"
   }
 })
