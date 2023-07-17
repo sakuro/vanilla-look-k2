@@ -1,8 +1,5 @@
 # ToDo
 
-* Equipment
-* Projectiles
-
 ## Icons (vanilla) needed
 
 * Basic/Advanced oil processing recipe
