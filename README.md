@@ -1,5 +1,9 @@
 # Vanilla Look: Krastorio 2
 
+![https://mods.factorio.com/mod/vanilla-look-k2](https://img.shields.io/badge/dynamic/json.svg?label=Downloads&url=https%3A%2F%2Fmods.factorio.com%2Fapi%2Fmods%2Fvanilla-look-k2&query=%24.downloads_count&colorB=%2343d463)
+
+## Summary
+
 This MOD _selectively_ restores vanilla look of some items, recipes and technologies which are changed in Krastorio 2.
 
 ## Difference of icons between Vanilla and Krastorio 2
@@ -18,6 +22,8 @@ This MOD _selectively_ restores vanilla look of some items, recipes and technolo
 |Electric mining drill|![](docs/images/vanilla/electric-mining-drill.png)|![](docs/images/k2/electric-mining-drill.png)|
 |(Oil) Pumpjack|![](docs/images/vanilla/pumpjack.png)|![](docs/images/k2/oil-pumpjack.png)|
 |Substation|![](docs/images/vanilla/substation.png)|![](docs/images/k2/substation.png)|
+|Atomic bomb|![](docs/images/vanilla/atomic-bomb.png)|![](docs/images/k2/atomic-bomb.png)|
+|Artillery shell|![](docs/images/vanilla/artillery-shell.png)|![](docs/images/k2/artillery-shell.png)|
 
 ### Fluid
 

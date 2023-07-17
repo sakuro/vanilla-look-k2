@@ -145,11 +145,27 @@ data:extend({
   },
   {
     type = "string-setting",
+    name = "vlk2-atomic-bomb",
+    setting_type = "startup",
+    allowed_values = {"vanilla", "k2"},
+    default_value = "k2",
+    order = "e:ammo-1"
+  },
+  {
+    type = "string-setting",
+    name = "vlk2-artillery-shell",
+    setting_type = "startup",
+    allowed_values = {"vanilla", "k2"},
+    default_value = "k2",
+    order = "e:ammo-2"
+  },
+  {
+    type = "string-setting",
     name = "vlk2-logistics",
     setting_type = "startup",
     allowed_values = {"vanilla", "k2"},
     default_value = "k2",
-    order = "e:technology-1"
+    order = "f:technology-1"
   },
   {
     type = "string-setting",
@@ -157,7 +173,7 @@ data:extend({
     setting_type = "startup",
     allowed_values = {"vanilla", "k2"},
     default_value = "k2",
-    order = "e:technology-2"
+    order = "f:technology-2"
   },
   {
     type = "string-setting",
@@ -165,7 +181,7 @@ data:extend({
     setting_type = "startup",
     allowed_values = {"vanilla", "k2"},
     default_value = "k2",
-    order = "e:technology-3"
+    order = "f:technology-3"
   },
   {
     type = "string-setting",
@@ -173,7 +189,7 @@ data:extend({
     setting_type = "startup",
     allowed_values = {"vanilla", "k2"},
     default_value = "k2",
-    order = "e:technology-4"
+    order = "f:technology-4"
   },
   {
     type = "string-setting",
@@ -181,6 +197,62 @@ data:extend({
     setting_type = "startup",
     allowed_values = {"vanilla", "k2"},
     default_value = "k2",
-    order = "f:recipe-1"
+    order = "g:recipe-1"
+  },
+  {
+    type = "string-setting",
+    name = "vlk2-exoskeleton-equipment",
+    setting_type = "startup",
+    allowed_values = {"vanilla", "k2"},
+    default_value = "k2",
+    order = "h:equipment-1"
+  },
+  {
+    type = "string-setting",
+    name = "vlk2-night-vision-equipment",
+    setting_type = "startup",
+    allowed_values = {"vanilla", "k2"},
+    default_value = "k2",
+    order = "h:equipment-2"
+  },
+  {
+    type = "string-setting",
+    name = "vlk2-battery-equipment",
+    setting_type = "startup",
+    allowed_values = {"vanilla", "k2"},
+    default_value = "k2",
+    order = "h:equipment-3"
+  },
+  {
+    type = "string-setting",
+    name = "vlk2-energy-shield-equipment",
+    setting_type = "startup",
+    allowed_values = {"vanilla", "k2"},
+    default_value = "k2",
+    order = "h:equipment-4"
+  },
+  {
+    type = "string-setting",
+    name = "vlk2-fusion-reactor-equipment",
+    setting_type = "startup",
+    allowed_values = {"vanilla", "k2"},
+    default_value = "k2",
+    order = "h:equipment-5"
+  },
+  {
+    type = "string-setting",
+    name = "vlk2-personal-laser-defense-equipment",
+    setting_type = "startup",
+    allowed_values = {"vanilla", "k2"},
+    default_value = "k2",
+    order = "h:equipment-6"
+  },
+  {
+    type = "string-setting",
+    name = "vlk2-personal-roboport-equipment",
+    setting_type = "startup",
+    allowed_values = {"vanilla", "k2"},
+    default_value = "k2",
+    order = "h:equipment-7"
   }
 })
