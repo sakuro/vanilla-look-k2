@@ -1,4 +1,4 @@
-util = require("scripts/util")
+local util = require("scripts/util")
 
 -- Iron plate
 if util.restore_vanilla_look("iron-plate") then

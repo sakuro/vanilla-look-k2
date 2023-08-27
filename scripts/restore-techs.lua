@@ -1,4 +1,4 @@
-util = require("scripts/util")
+local util = require("scripts/util")
 
 -- Logistics
 if util.restore_vanilla_look("logistics") then
