@@ -48,13 +48,6 @@ if util.restore_vanilla_look("light-oil") then
     })
   end
 else
-  -- Solid fuel with Light oil
-  -- https://github.com/raiguard/Krastorio2/pull/362
-  krastorio.icons.setRecipeIcons("solid-fuel-from-light-oil", {
-    { icon = "__base__/graphics/icons/solid-fuel.png", icon_size = 64 },
-    { icon = kr_fluids_icons_path .. "light-oil.png", icon_size = data.raw.fluid["light-oil"].icon_size or 64, scale = 0.26, shift = { -8, -8 } }
-  })
-
   -- Light oil cracking with K2's light oil icon
   if util.restore_vanilla_look("petroleum-gas") then
     krastorio.icons.setRecipeIcons("light-oil-cracking", {

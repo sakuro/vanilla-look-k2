@@ -6,7 +6,7 @@
   "author": "sakuro",
   "description": "Restores vanilla look of some items, recipes and technologies",
   "dependencies": [
-    "Krastorio2",
+    "Krastorio2 >= 1.3.23",
     "Krastorio2Assets"
   ]
 }
