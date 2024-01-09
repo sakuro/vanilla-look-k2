@@ -31,7 +31,7 @@ jobs:
             Changes:\
               - \
             Bugfix:\
-              - ' | sed -e 's/          //' > changelog.txt) < changelog.txt
+              - ' > changelog.txt) < changelog.txt
           git add info.json changelog.txt
           git commit -m 'Bump to v${{ github.event.inputs.version }}'
           git push origin "release-v${{ github.event.inputs.version }}"

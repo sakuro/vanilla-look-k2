@@ -7,6 +7,7 @@
   "description": "Restores vanilla look of some items, recipes and technologies",
   "dependencies": [
     "Krastorio2 >= 1.3.23",
-    "Krastorio2Assets"
+    "Krastorio2Assets",
+    "? bzgas >= 0.1.12"
   ]
 }

@@ -47,6 +47,13 @@ if util.restore_vanilla_look("light-oil") then
       { icon = kr_fluids_icons_path .. "petroleum-gas.png", icon_size = 64, scale = 0.250, shift = {9, 7} }
     })
   end
+
+  if mods.bzgas then
+    krastorio.icons.setRecipeIcons("phenol-from-oil", {
+      { icon = "__bzgas__/graphics/icons/phenol.png", icon_size = 128},
+      { icon = "__base__/graphics/icons/fluid/light-oil.png", icon_size = 64, icon_mipmaps = 4, scale = 0.25, shift = {-8,-8}}
+    })
+  end
 else
   -- Light oil cracking with K2's light oil icon
   if util.restore_vanilla_look("petroleum-gas") then
