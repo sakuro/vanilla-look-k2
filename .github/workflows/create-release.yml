@@ -33,7 +33,7 @@ jobs:
       - name: Upload the MOD to the MOD portal
         uses: ./.github/actions/upload
         with:
-          mod_name: start-alt
+          mod_name: vanilla-look-k2
           mod_version: "${{ steps.version.outputs.version }}"
           zip_name: "${{ steps.version.outputs.archive }}"
           api_key: ${{ secrets.MOD_PORTAL_API_KEY }}
